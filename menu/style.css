@@ -1,0 +1,75 @@
+.menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    width: 200px;
+    list-style: none;
+    background-color: blue;
+    position: relative;
+}
+
+.menu a{
+    color: snow;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    height: 40px;   
+    line-height: 40px;
+    transition: all 1s;
+
+}
+
+.menu a:hover{
+    background-color: black;
+}
+.menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    top: 0 ;
+    left: 100%;
+}
+
+#burger,  [for = burger]{
+    display: none;
+}
+
+@media  screen and (max-width:2000px){
+    [for = burger]{
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+nav{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+#burger:checked + label + nav{
+    display: block;
+}

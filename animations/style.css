@@ -1,0 +1,36 @@
+
+.first{
+    width: 150px;
+    height: 150px;
+    background-color: chocolate;
+    /* transition: all 2s; */
+    transition: all 8s cubic-bezier(.53,.26,.42,.83);
+    /* margin: 5%; */
+}
+
+
+.first:hover{
+    width: 180px;
+   height: 180px;
+   background-color: blue;
+   margin: 42%; 
+}
+
+.second{
+    width: 150px;
+    height: 150px;
+    background-color:cadetblue;
+    transition: all 8s cubic-bezier(.53,.26,.42,.83);
+
+    
+   
+}
+.second:hover{
+    width: 150px;
+    height: 150px;
+    background-color:crimson;
+    transition: all 8s cubic-bezier(.53,.26,.42,.83);
+    margin: 12%;
+    
+   
+}
